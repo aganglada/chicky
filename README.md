@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="http://imgur.com/KOCCUFd.png" width="200" height="200" alt="chick">
+  <img src="http://imgur.com/KOCCUFd.png" width="200" height="200" alt="chicky">
 </p>
 
-# 🐥 chick
+# 🐥 chicky
 
 window.fetch() api interface
 
@@ -13,24 +13,24 @@ window.fetch() api interface
 
 ## Install
 
-You can install `chick` from npm.
+You can install `chicky` from npm.
 
 ```markdown
-npm install chick --save
+npm install chicky --save
 ```
 
 or from yarn
 
 ```markdown
-yarn add chick
+yarn add chicky
 ```
 
 ## Usage
 
 ```javascript
-import chick from 'chick';
+import chicky from 'chicky';
 
-chick.get('http://api.github.com/aganglada')
+chicky.get('http://api.github.com/aganglada')
    .then(data => {
       console.log(data); 
    });
@@ -43,9 +43,9 @@ chick.get('http://api.github.com/aganglada')
 Get data from anywhere at any time.
 
 ```javascript
-import chick from 'chick';
+import chicky from chickyy;
 
-chick.get('http://api.github.com/aganglada')
+chicky.get('http://api.github.com/aganglada')
    .then(data => {
       console.log(data); 
    });
@@ -56,11 +56,11 @@ chick.get('http://api.github.com/aganglada')
 Create new data for a better future.
 
 ```javascript
-import chick from 'chick';
+import chicky from 'chicky';
 
-chick.post('http://api.github.com/aganglada', {
+chicky.post('http://api.github.com/aganglada', {
     repo: {
-        name: 'chick'
+        name: 'chicky'
     }
 })
    .then(data => {
@@ -73,11 +73,11 @@ chick.post('http://api.github.com/aganglada', {
 Update data to maintain the world.
 
 ```javascript
-import chick from 'chick';
+import chicky from chickyy;
 
-chick.put('http://api.github.com/aganglada', {
+chicky.put('http://api.github.com/aganglada', {
     repo: {
-        name: 'chick',
+        name: 'chicky',
         owner: 'alex'
     }
 })
@@ -91,11 +91,11 @@ chick.put('http://api.github.com/aganglada', {
 Change data of a single person and make it optimal.
 
 ```javascript
-import chick from 'chick';
+import chicky from 'chicky';
 
-chick.patch('http://api.github.com/aganglada', {
+chicky.patch('http://api.github.com/aganglada', {
     repo: {
-        name: 'chick',
+        name: 'chicky',
         owner: 'alex'
     }
 })
@@ -109,11 +109,11 @@ chick.patch('http://api.github.com/aganglada', {
 Get rid of things you don't need.
 
 ```javascript
-import chick from 'chick';
+import chicky from 'chicky';
 
-chick.delete('http://api.github.com/aganglada', {
+chicky.delete('http://api.github.com/aganglada', {
     repo: {
-        name: 'chick'
+        name: 'chicky'
     }
 })
    .then(data => {
@@ -124,7 +124,7 @@ chick.delete('http://api.github.com/aganglada', {
 ## Contribute
 
 If you like to contribute to this project be sure all the changes you made, 
-make sense for everyone and they can continue using `chick` as their general api service.
+make sense for everyone and they can continue using `chicky` as their general api service.
 
 
 ## License

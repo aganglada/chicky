@@ -1,6 +1,6 @@
 import unfetch from 'unfetch';
 
-const chick = () => {
+const chicky = () => {
 
     const methods = [
         'get',
@@ -32,4 +32,4 @@ const chick = () => {
     return fly();
 };
 
-export default chick();
+export default chicky();

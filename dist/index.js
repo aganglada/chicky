@@ -1,12 +1,12 @@
 import unfetch from 'unfetch';
 
-var chick = function chick() {
+var chicky = function chicky() {
 
     var methods = ['get', 'post', 'put', 'patch', 'delete'];
 
     var fly = function fly() {
         return methods.map(function (verb) {
-            return methods[verb] = verb !== 'get' ? request.bind(null, verb.toUpperCase()) : requestWithBody.bind(null, verb.toUpperCase());
+            return methods[verb] = verb === 'get' ? request.bind(null, verb.toUpperCase()) : requestWithBody.bind(null, verb.toUpperCase());
         });
     };
 
@@ -24,6 +24,6 @@ var chick = function chick() {
     return fly();
 };
 
-var index = chick();
+var index = chicky();
 
 export default index;
