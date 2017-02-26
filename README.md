@@ -36,11 +36,6 @@ chick.get('http://api.github.com/aganglada')
    });
 ```
 
-## Contribute
-
-If you like to contribute to this project be sure all the changes you made, 
-make sense for everyone and they can continue using `chick` as their general api service.
-
 ## Methods
 
 #### get
@@ -125,6 +120,12 @@ chick.delete('http://api.github.com/aganglada', {
       console.log(data); 
    });
 ```
+
+## Contribute
+
+If you like to contribute to this project be sure all the changes you made, 
+make sense for everyone and they can continue using `chick` as their general api service.
+
 
 ## License
 
