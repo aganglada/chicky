@@ -2,7 +2,7 @@
   "name": "chick",
   "version": "1.0.0",
   "description": "window.fetch() api inteface",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "git@github.com:aganglada/chick.git",
   "author": "aganglada <aganglada@gmail.com>",
   "license": "MIT",
