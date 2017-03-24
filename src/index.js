@@ -11,11 +11,11 @@ const chicky = () => {
     ];
 
     const fly = () => {
-        return methods.map(verb => {
-            return methods[verb] = verb === 'get' ?
+        return methods.reduce((list, verb) =>  Object.assign({}, list, {
+            [verb]: methods[verb] = verb === 'get' ?
                 request.bind(null, verb.toUpperCase()) :
                 requestWithBody.bind(null, verb.toUpperCase())
-        })
+        }), {});
     };
 
     const request = (method, url, options = {}) =>

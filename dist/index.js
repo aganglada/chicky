@@ -1,13 +1,28 @@
 import unfetch from 'unfetch';
 
+var defineProperty = function (obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+};
+
 var chicky = function chicky() {
 
     var methods = ['get', 'post', 'put', 'patch', 'delete'];
 
     var fly = function fly() {
-        return methods.map(function (verb) {
-            return methods[verb] = verb === 'get' ? request.bind(null, verb.toUpperCase()) : requestWithBody.bind(null, verb.toUpperCase());
-        });
+        return methods.reduce(function (list, verb) {
+            return Object.assign({}, list, defineProperty({}, verb, methods[verb] = verb === 'get' ? request.bind(null, verb.toUpperCase()) : requestWithBody.bind(null, verb.toUpperCase())));
+        }, {});
     };
 
     var request = function request(method, url) {
