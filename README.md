@@ -43,7 +43,7 @@ chicky.get('http://api.github.com/aganglada')
 Get data from anywhere at any time.
 
 ```javascript
-import chicky from chickyy;
+import chicky from 'chicky';
 
 chicky.get('http://api.github.com/aganglada')
    .then(data => {
@@ -73,7 +73,7 @@ chicky.post('http://api.github.com/aganglada', {
 Update data to maintain the world.
 
 ```javascript
-import chicky from chickyy;
+import chicky from 'chicky';
 
 chicky.put('http://api.github.com/aganglada', {
     repo: {
