@@ -20,7 +20,7 @@ const chicky = () => {
 
     const handleErrors = (response) => {
         if (!response.ok) {
-            throw Error(response);
+            throw Error(response.statusText);
         }
         return response;
     }
