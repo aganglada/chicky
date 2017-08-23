@@ -1,6 +1,6 @@
 {
   "name": "chicky",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "window.fetch() api inteface",
   "main": "dist/index.js",
   "repository": "git@github.com:aganglada/chicky.git",

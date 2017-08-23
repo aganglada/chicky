@@ -18,13 +18,20 @@ const chicky = () => {
         }), {});
     };
 
+    const handleErrors = (response) => {
+        if (!response.ok) {
+            throw Error(response);
+        }
+        return response;
+    }
+
     const request = (method, url, options = {}) =>
         unfetch(
             url,
             Object.assign({}, options, {
                 method
             })
-        );
+        ).then(handleErrors);
 
     const requestWithBody = (method, url, body, options) =>
         request(method, url, Object.assign({}, { body }, options));
