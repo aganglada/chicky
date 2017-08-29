@@ -25,18 +25,11 @@ var chicky = function chicky() {
         }, {});
     };
 
-    var handleErrors = function handleErrors(response) {
-        if (!response.ok) {
-            throw Error(response.statusText);
-        }
-        return response;
-    };
-
     var request = function request(method, url) {
         var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
         return unfetch(url, Object.assign({}, options, {
             method: method
-        })).then(handleErrors);
+        }));
     };
 
     var requestWithBody = function requestWithBody(method, url, body, options) {
